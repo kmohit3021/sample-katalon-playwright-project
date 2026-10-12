@@ -1,7 +1,8 @@
 import { defineConfig, devices } from '@playwright/test';
 import dotenv from 'dotenv';
+import path from 'node:path';
 
-dotenv.config({ quiet: true });
+dotenv.config({ path: path.resolve(__dirname, '.env'), quiet: true });
 
 const enableKatalonReporter = process.env.KATALON_REPORTER === 'true';
 
