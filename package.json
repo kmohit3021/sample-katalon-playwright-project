@@ -1,0 +1,27 @@
+{
+  "name": "sample-playwright-project",
+  "version": "1.0.0",
+  "description": "Playwright POM automation for OrangeHRM",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "e2e",
+    "orangehrm"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@katalon/playwright-reporter": "^0.0.3",
+    "@playwright/test": "^1.61.1",
+    "dotenv": "^17.4.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^7.0.2"
+  }
+}
