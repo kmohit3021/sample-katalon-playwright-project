@@ -16,8 +16,8 @@ function buildEmployeeData() {
 
 test.describe('OrangeHRM employee flow', () => {
   test('orangehrm end-to-end employee flow', async ({ page }) => {
-    const appUsername = process.env.APP_USERNAME;
-    const appPassword = process.env.APP_PASSWORD;
+    const appUsername = "mohit.kumar";
+    const appPassword = "Katalon@123";
 
     expect(
       appUsername,
