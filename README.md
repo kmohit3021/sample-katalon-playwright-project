@@ -21,13 +21,13 @@ npm install
 npx playwright install chromium
 ```
 
-3. Configure environment values in `.env`:
+3. Create a local `.env` from the placeholder template and set your credentials:
 
-```env
-APP_URL=https://orange.katalon.com/web/index.php/auth/login
-APP_USERNAME=your-username
-APP_PASSWORD=your-password
+```bash
+cp .env.example .env
 ```
+
+The `.env` file is for local runs only and is ignored by Git. For CI or platform-triggered runs, provide `APP_URL`, `APP_USERNAME`, and `APP_PASSWORD` through the runner's environment or secret store. Do not commit real credentials.
 
 ## Run Tests
 
