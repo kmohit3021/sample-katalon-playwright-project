@@ -14,7 +14,8 @@ function buildEmployeeData() {
   };
 }
 
-test('orangehrm end-to-end employee flow', async ({ page }) => {
+test.describe('OrangeHRM employee flow', () => {
+  test('orangehrm end-to-end employee flow', async ({ page }) => {
   const appUsername = process.env.APP_USERNAME;
   const appPassword = process.env.APP_PASSWORD;
 
@@ -47,4 +48,5 @@ test('orangehrm end-to-end employee flow', async ({ page }) => {
   await userMenu.logout();
 
   await loginPage.assertLoggedOut();
+  });
 });
